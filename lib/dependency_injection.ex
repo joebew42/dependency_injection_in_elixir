@@ -1,4 +1,4 @@
-defmodule Example do
+defmodule Example1 do
   def send_greetings() do
     Employees.all()
     |> Enum.filter(fn employee -> birthday_today?(employee) end)
