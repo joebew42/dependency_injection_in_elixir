@@ -1,16 +1,9 @@
 defmodule Example3 do
-  @defaults [
-    employees: Employees,
-    greeting_message: GreetingMessage,
-    greeting_message_sender: GreetingMessageSender
-  ]
-
   def send_greetings(
-    employees \\ Employees,
-    greeting_message \\ GreetingMessage,
-    greeting_message_sender \\ GreetingMessageSender)
-    do
-
+        employees \\ Employees,
+        greeting_message \\ GreetingMessage,
+        greeting_message_sender \\ GreetingMessageSender
+      ) do
     employees.all()
     |> Enum.filter(fn employee -> birthday_today?(employee) end)
     |> Enum.map(fn employee -> greeting_message.create(employee) end)
