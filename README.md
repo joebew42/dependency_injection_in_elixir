@@ -1,21 +1,14 @@
-# DependencyInjection
+# Dependency Injection in Elixir
 
-**TODO: Add description**
+The purpose of this repository is to collect the several ideas/mechanisms to achieve Dependency Injection in Elixir.
 
-## Installation
+Here the starting list:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `dependency_injection` to your list of dependencies in `mix.exs`:
+- [No dependency injection at all](/lib/example1.ex)
+- [Dependency Injection through Application.get_env/3](/lib/example2.ex)
+- [Dependency Injection with function parameters](/lib/example3.ex)
+- [Dependency Injection with function parameters and defaults](/lib/example4.ex)
+- ...
 
-```elixir
-def deps do
-  [
-    {:dependency_injection, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/dependency_injection](https://hexdocs.pm/dependency_injection).
+Feel free to submit a Pull Request with your alternative solution!
 
